@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&family=Rubik:ital@1&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: cadetblue;
+  color: white;
+  height: 6vw;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+nav > ul {
+  list-style: none;
+  font-size: 2rem;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  padding-left: 2vh;
+}
+
+.gamecontainer {
+  /* border: 2px solid red; */
+  margin-top: 4vw;
+  display: flex;
+  justify-content: center;
+  /* background-color: blueviolet; */
+}
+
+.container {
+  /* border: 2px solid green; */
+  display: grid;
+  grid-template-columns: repeat(3, 10vw);
+  grid-template-rows: repeat(3, 10vw);
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  position: relative;
+}
+
+.line {
+  height: 8vh;
+  width: 8vh;
+  position: absolute;
+  transform: rotateX(90deg);
+}
+
+.box {
+  border: 2px solid black;
+  font-size: 60px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container > :hover {
+  background-color: rgb(225, 211, 238);
+}
+.gameinfo {
+  padding: 2vh;
+  margin: 4vh;
+  font-family: "Rubik", sans-serif;
+}
+
+img {
+  height: 200px;
+  border-radius: 40%;
+  width: 0;
+}
+
+.border_right {
+  border-right: 0;
+}
+
+.border_left {
+  border-left: 0px;
+}
+
+.border_top {
+  border-top: 0;
+}
+.border_bottom {
+  border-bottom: 0;
+}
+
+#reset {
+  padding: 1vh;
+  margin: 2vh;
+  /* height: 5vh; */
+  /* width: 10vh; */
+  border: none;
+  font-size: 16px;
+  background-color: rgb(243, 193, 243);
+  cursor: pointer;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border-radius: 30%;
+  /* font-weight: bold; */
+}
+
+#reset:hover {
+  background-color: rgb(252, 172, 252);
+  /* border: 1px solid rgb(126, 125, 125); */
+}
+
+.info {
+  font-size: 20px;
+}
